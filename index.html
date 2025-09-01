@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweets by Lea - Delicious Homemade Treats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sweets by Lea</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Sweet Dreams Made Real</h1>
+                <p class="hero-subtitle">Indulge in our handcrafted treats made with love and the finest ingredients</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Order Now</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="cake-illustration">
+                    <div class="cake-layer cake-bottom"></div>
+                    <div class="cake-layer cake-top"></div>
+                    <div class="candles">
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-candy candy-1">🧁</div>
+            <div class="floating-candy candy-2">🍪</div>
+            <div class="floating-candy candy-3">🥧</div>
+            <div class="floating-candy candy-4">🍩</div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="floating-elements">
+            <div class="floating-candy candy-5">🍰</div>
+            <div class="floating-candy candy-6">🍭</div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Our Sweet Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Treats</button>
+                <button class="category-btn" data-category="cakes">Cakes</button>
+                <button class="category-btn" data-category="cupcakes">Cupcakes</button>
+                <button class="category-btn" data-category="cookies">Cookies</button>
+                <button class="category-btn" data-category="special">Special</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="cakes">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🎂</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Fudge Cake</h3>
+                        <p>Rich chocolate cake with creamy fudge frosting</p>
+                        <span class="price">$24.99</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cakes">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍰</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Vanilla Dream Cake</h3>
+                        <p>Classic vanilla sponge with buttercream frosting</p>
+                        <span class="price">$22.99</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cupcakes">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🧁</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Red Velvet Cupcakes</h3>
+                        <p>Moist red velvet with cream cheese frosting</p>
+                        <span class="price">$3.50 each</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cupcakes">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🧁</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Chip Cupcakes</h3>
+                        <p>Chocolate cupcakes with chocolate chip frosting</p>
+                        <span class="price">$3.25 each</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cookies">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍪</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Chip Cookies</h3>
+                        <p>Soft and chewy with premium chocolate chips</p>
+                        <span class="price">$2.50 each</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cookies">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍪</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Sugar Cookies</h3>
+                        <p>Decorated sugar cookies with royal icing</p>
+                        <span class="price">$2.75 each</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="special">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍭</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Custom Birthday Cakes</h3>
+                        <p>Personalized cakes for your special day</p>
+                        <span class="price">From $35.99</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="special">
+                    <div class="menu-item-image">
+                        <div class="placeholder-image">🍰</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Wedding Cakes</h3>
+                        <p>Elegant multi-tier wedding cakes</p>
+                        <span class="price">From $150.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Lea's Sweet Creations</h2>
+                    <p>Welcome to Sweets by Lea, where every treat is crafted with love and passion. Lea started her journey in her home kitchen, perfecting family recipes and creating new ones that would bring joy to every celebration.</p>
+                    <p>Our commitment to quality means using only the finest ingredients, from premium Belgian chocolate to farm-fresh eggs and real butter. Each sweet creation is made to order, ensuring freshness and perfection in every bite.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Made with Love</h4>
+                            <p>Every treat is crafted with care and attention to detail</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Fresh Ingredients</h4>
+                            <p>We use only the finest, freshest ingredients available</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <h4>Custom Orders</h4>
+                            <p>Personalized treats for your special occasions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <i class="fas fa-birthday-cake"></i>
+                        <p>Lea's Kitchen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-truck"></i>
+                        <div>
+                            <h4>Delivery Area</h4>
+                            <p>We deliver fresh treats<br>to the Jupiter area!</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Orders</h4>
+                            <p><a href="mailto:leacarlsen7@gmail.com">leacarlsen7@gmail.com</a><br>For questions & orders</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Always Open</h4>
+                            <p>24/7 for your sweet cravings<br>Order anytime!</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4>Follow Us</h4>
+                            <p>See our latest creations<br>and place orders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media-section">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media to see our latest sweet creations and place your orders!</p>
+                    <div class="social-links-large">
+                        <a href="https://instagram.com/sweetsbylea" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                            <small>@sweetsbylea</small>
+                        </a>
+                        <a href="https://facebook.com/sweetsbylea" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                            <small>Sweets by Lea</small>
+                        </a>
+                    </div>
+                    <div class="order-instructions">
+                        <h4>How to Order:</h4>
+                        <ol>
+                            <li>Browse our Instagram or Facebook for inspiration</li>
+                            <li>Send us a DM for your order and we'll be in touch</li>
+                            <li>We'll confirm your order and delivery time</li>
+                            <li>Enjoy your fresh, handcrafted treats!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sweets by Lea</h3>
+                    <p>Creating sweet memories, one treat at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Custom Cakes</a></li>
+                        <li><a href="#">Wedding Cakes</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> leacarlsen7@gmail.com</p>
+                    <p><i class="fas fa-truck"></i> Delivery to Jupiter area</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweets by Lea. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
