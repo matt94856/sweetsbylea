@@ -1293,12 +1293,130 @@ body {
         align-items: center;
     }
     
+    /* Mobile Floating Elements Optimization */
+    .floating-elements {
+        display: none;
+    }
+    
+    /* Mobile Hero Section - Add subtle background pattern instead */
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: 
+            radial-gradient(circle at 20% 20%, rgba(255, 182, 193, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(255, 192, 203, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 40% 60%, rgba(255, 153, 204, 0.08) 0%, transparent 50%);
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    /* Mobile Menu Section - Add subtle decorative elements */
+    .menu-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: 
+            radial-gradient(circle at 10% 10%, rgba(255, 182, 193, 0.05) 0%, transparent 40%),
+            radial-gradient(circle at 90% 90%, rgba(255, 192, 203, 0.05) 0%, transparent 40%);
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    /* Ensure content stays above background patterns */
+    .hero-content,
+    .menu-section .container,
+    .about-section .container,
+    .contact-section .container {
+        position: relative;
+        z-index: 2;
+    }
+    
     .category-btn {
         width: 200px;
     }
     
     .about-features {
         grid-template-columns: 1fr;
+    }
+    
+    /* Mobile Typography Optimization */
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* Mobile Spacing Optimization */
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .menu-section,
+    .about-section,
+    .contact-section {
+        padding: 3rem 0;
+    }
+    
+    /* Mobile Button Optimization */
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    
+    /* Mobile Card Optimization */
+    .menu-item,
+    .feature,
+    .contact-item {
+        margin-bottom: 1rem;
+    }
+    
+    /* Mobile Navigation Optimization */
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .nav-logo h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Mobile Cake Optimization */
+    .cake-illustration {
+        margin: 1rem auto;
+    }
+    
+    /* Mobile Social Media Optimization */
+    .social-media-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .social-media-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .order-instructions {
+        padding: 1.2rem;
+    }
+    
+    .order-instructions h4 {
+        font-size: 1.2rem;
+    }
+    
+    .order-instructions ol {
+        font-size: 0.9rem;
+        line-height: 1.6;
     }
 }
 
@@ -1322,6 +1440,84 @@ body {
     
     .btn {
         width: 200px;
+    }
+    
+    /* Extra Small Mobile Optimizations */
+    .hero-title {
+        line-height: 1.1;
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-logo h2 {
+        font-size: 1.3rem;
+    }
+    
+    .cake-illustration {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .cake-bottom {
+        width: 180px;
+        height: 120px;
+    }
+    
+    .cake-top {
+        width: 140px;
+        height: 100px;
+        bottom: 120px;
+    }
+    
+    .candles {
+        gap: 8px;
+    }
+    
+    .candle {
+        width: 8px;
+        height: 30px;
+    }
+    
+    .cake-illustration::before {
+        width: 220px;
+        height: 14px;
+        bottom: -14px;
+    }
+    
+    .menu-item-content,
+    .feature,
+    .contact-item {
+        padding: 1.2rem;
+    }
+    
+    .social-media-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .social-link {
+        padding: 1.2rem;
+    }
+    
+    .social-link i {
+        font-size: 2rem;
+    }
+    
+    .order-instructions {
+        padding: 1rem;
+    }
+    
+    .order-instructions ol {
+        font-size: 0.85rem;
+        padding-left: 1.2rem;
     }
 }
 
